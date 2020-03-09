@@ -1,0 +1,142 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: #121013;
+  transition: 0.3s;
+  font-family: "Muli", sans-serif;
+}
+
+::selection {
+  background: #943d3c;
+}
+
+nav {
+  color: lightgray;
+  background: #121013;
+  font-family: "Montserrat", sans-serif;
+}
+nav .navbar-brand {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+nav .fullstop {
+  z-index: 1167738;
+  position: relative;
+  color: #f13b3d;
+  margin-left: -8px;
+  font-size: 2em;
+}
+nav .white-brand {
+  background: white;
+  padding-top: 30px;
+  margin-top: -10px;
+}
+nav .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+nav .navbar-nav {
+  position: relative;
+  z-index: 123;
+}
+nav .navbar-nav li {
+  padding-left: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+section.top {
+  color: white;
+}
+section.top .dash {
+  color: #943d3c;
+  font-weight: 800;
+}
+section.top .left {
+  text-align: right;
+}
+section.top .left p {
+  color: #69676a;
+}
+section.top .left h5 {
+  color: #89878a;
+}
+section.top .center {
+  font-family: "Montserrat", sans-serif;
+}
+section.top .center h1 {
+  font-weight: 1000;
+  letter-spacing: 2px;
+  color: #fafbfe;
+}
+section.top .center .red {
+  color: #6a2b2a;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+section.top .center .fullstop {
+  color: #6a2b2a;
+  padding-left: -10px;
+}
+section.top .center h5 {
+  line-height: 40px;
+  color: #69676a;
+}
+section.top .center .bio {
+  color: #89878a;
+}
+section.top .left-2 {
+  margin-left: 70%;
+  font-family: "Montserrat", sans-serif;
+}
+section.top .left-2 span.number {
+  color: #6a2b2a;
+  font-size: 3em;
+  font-weight: bolder;
+}
+section.top .left-2 .bigger {
+  font-size: 1.5em;
+}
+section.top .left-2 p {
+  font-weight: bolder;
+  color: #89878a;
+}
+section.top .image {
+  height: 101vh;
+  margin-top: -27vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 720px) {
+  .image {
+    display: none;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .left-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 444px) {
+  .navbar-nav {
+    margin: 0 auto;
+  }
+
+  .white-brand {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
