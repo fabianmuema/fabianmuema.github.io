@@ -28,6 +28,8 @@
  * ===================================================================
  */
 
+/*TODO: CHANGE COLORS*/
+
 /**
  * ===================================================================
  * 01. webfonts and iconfonts - (_document-setup.scss)
@@ -130,7 +132,7 @@ h5,
 .h05,
 h6,
 .h06 {
-  font-family: "poppins-bold";
+  font-family: "poppins-bold", serif;
   margin-bottom: 1.2rem;
 }
 h1,
@@ -218,7 +220,7 @@ blockquote {
 blockquote:before {
   content: "\201C";
   font-size: 8rem;
-  line-height: 0px;
+  line-height: 0;
   margin: 0;
   color: #313131;
   font-family: arial, sans-serif;
@@ -398,7 +400,7 @@ td:last-child {
  */
 button,
 .button {
-  margin-bottom: 1.2;
+  margin-bottom: 1.2rem;
   border-radius: 25px;
 }
 fieldset {
@@ -610,7 +612,7 @@ select {
 }
 .ss-custom-select::after {
   content: "\f0d7";
-  font-family: "FontAwesome";
+  font-family: "FontAwesome", serif;
   position: absolute;
   top: 50%;
   right: 1.5rem;
@@ -775,7 +777,7 @@ button.large,
 .button.large {
   height: 6rem !important;
   line-height: 6rem !important;
-  padding: 0rem 3rem !important;
+  padding: 0 3rem !important;
 }
 button.stroke,
 .button.stroke {
@@ -922,14 +924,14 @@ input::-moz-focus-inner {
  */
 .pull-quote {
   position: relative;
-  padding: 2.1rem 3rem 2.1rem 0px;
+  padding: 2.1rem 3rem 2.1rem 0;
 }
 .pull-quote:before,
 .pull-quote:after {
   height: 1em;
   position: absolute;
   font-size: 8rem;
-  font-family: Arial, Sans-Serif;
+  font-family: Arial, Sans-Serif, serif;
   color: #333;
 }
 .pull-quote:before {
@@ -999,28 +1001,19 @@ input::-moz-focus-inner {
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
  */
-.skill-bars {
-  list-style: none;
-  margin: 6rem 0 3rem;
-}
 .skill-bars li {
-  height: 0.6rem;
-  background: #a1a1a1;
   width: 100%;
-  margin-bottom: 6rem;
   padding: 0;
   position: relative;
 }
 .skill-bars li strong {
   position: absolute;
   left: 0;
-  top: -3rem;
   font-family: "poppins-bold", sans-serif;
   color: #313131;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
-  line-height: 2.4rem;
 }
 .skill-bars li .progress {
   background: #313131;
@@ -1485,7 +1478,7 @@ header .logo a {
 .intro-content .button::after {
   display: inline-block;
   content: "\f107";
-  font-family: fontAwesome;
+  font-family: fontAwesome, serif;
   font-size: 1.6rem;
   line-height: inherit;
   text-align: center;
@@ -1646,9 +1639,6 @@ header .logo a {
   color: #888888;
   font-size: 1.5rem;
   line-height: 1;
-}
-.about-content .skill-bars {
-  margin-top: 6rem;
 }
 
 .button-section {
@@ -2258,7 +2248,6 @@ header .logo a {
   display: inline-block;
 }
 .owl-theme .owl-controls .owl-page span {
-  display: block;
   width: 1.2rem;
   height: 1.2rem;
   margin: 1.2rem 0.8rem 0 0.8rem;
@@ -2301,7 +2290,6 @@ header .logo a {
   color: #000000;
 }
 #stats .stat-count {
-  color: #ffffff;
   font-size: 3.6rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
@@ -2595,7 +2583,8 @@ header .logo a {
  * -------------------------------------------------------------------
  */
 footer {
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-size: 1.4rem;
   font-family: "poppins-regular", sans-serif;
 }
@@ -2686,7 +2675,6 @@ footer .copyright span:last-child::after {
   text-align: center;
   background: #8c43ff;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
