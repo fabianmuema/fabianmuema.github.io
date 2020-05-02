@@ -265,7 +265,7 @@
                     <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
                         <div class="bgrid folio-item">
                             <div class="item-wrap">
-                                <img alt="Liberty" src="images/portfolio/app-landing-page.png">
+                                <img alt="Liberty" src="images/portfolio/app-landing-page.webp">
                                 <a class="overlay" href="#app-landing-page">
                                     <div class="folio-item-table">
                                         <div class="folio-item-cell">
@@ -298,7 +298,7 @@
 
                         <div class="bgrid folio-item">
                             <div class="item-wrap">
-                                <img alt="Hosting" src="images/preview.png">
+                                <img alt="Hosting" src="images/preview.webp">
                                 <a href="#modal-02" class="overlay">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
@@ -636,15 +636,12 @@
 
         <footer id="contact">
             <div class="row">
-
                 <div class="col-six tab-full pull-right social">
-
                     <ul class="footer-social">
                         <li><a href="http://www.github.com/fabianmuema"><i class="fa fa-github"></i></a></li>
                         <li><a href="https://twitter.com/fabian_muema_m?lang=en"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.instagram.com/fabian_muema_m"><i class="fa fa-instagram"></i></a></li>
                     </ul>
-
                 </div>
 
                 <div class="col-six tab-full">
@@ -670,13 +667,9 @@
         <script src="js/main.js"></script>
 
         <script>
-            let today = new Date();
-            const dd = String(today.getDate()).padStart(2, '0');
-            const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            const yyyy = today.getFullYear();
+            const yyyy = new Date().getFullYear();
 
-            today = yyyy;
-            document.getElementById("year").innerHTML = today
+            document.getElementById("year").innerHTML = yyyy;
         </script>
     </body>
 
