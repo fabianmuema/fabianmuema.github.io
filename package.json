@@ -1,0 +1,26 @@
+{
+  "name": "fabianmuema.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianmuema/fabianmuema.github.io.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Fabian Muema",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabianmuema/fabianmuema.github.io/issues"
+  },
+  "homepage": "https://github.com/fabianmuema/fabianmuema.github.io#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
+  }
+}
