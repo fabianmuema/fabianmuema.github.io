@@ -79,11 +79,11 @@
 			   stats.each(function () {
 				   var $this = $(this);
 
-				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+				   $({ Counter: 0 }).animate({ Counter: $this.text().replace(/,/g, '') }, {
 				   	duration: 4000,
 				   	easing: 'swing',
 				   	step: function (curValue) {
-				      	$this.text(Math.ceil(curValue));
+				      	$this.text(Math.ceil(curValue).toLocaleString('en-US'));
 				    	}
 				  	});
 				});
